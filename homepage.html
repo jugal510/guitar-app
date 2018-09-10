@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Guitar Center</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="homepage.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fliud">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Guitar Center</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Guitar</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">View All Guitars</a></li>
+                            <li><a href="#">Electric Guitar</a></li>
+                            <li><a href="#">Acoustic Guitar</a></li>
+                            <li><a href="#">Acoustic-Electric Guitar</a></li>
+                            <li><a href="#">Vintage Guitar</a></li>
+                            <li><a href="#">Classic &amp; Nylon</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Bass</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">View All Bass</a></li>
+                            <li><a href="#">Electric Bass</a></li>
+                            <li><a href="#">Electric Upright Bass</a></li>
+                            <li><a href="#">Left Handed Bass</a></li>
+                        </ul>   
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Drums</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">View All Drums</a></li>
+                            <li><a href="#">Electric Drums &amp; Set</a></li>
+                            <li><a href="#">Acoustic Drums &amp; set</a></li>
+                            <li><a href="#">Snare Drums</a></li>
+                            <li><a href="#">Cymbals</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Keyboards</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">View All Keyboards</a></li>
+                            <li><a href="#">Digital Pianos</a></li>
+                            <li><a href="#">MIDI Controls &amp; Interfaces</a></li>
+                            <li><a href="#">Portable &amp; Arranger</a></li>
+                            <li><a href="#">Keyboard WorkStation</a></li>
+                            <li><a href="#">Keyboard & MIDI Package</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">DJ &amp; Lightning</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">View All DJ &amp; Lightning</a></li>
+                            <li><a href="#">Dj Mixers</a></li>
+                            <li><a href="#">Controller &amp; Interface</a></li>
+                            <li><a href="#">DJ Software</a></li>
+                            <li><a href="#">Intelligent Lightning</a></li>
+                            <li><a href="#">Color Changer &amp; Wash Light</a></li>
+                            <li><a href="#">Lasers &amp; Strobes</a></li>
+                            <li><a href="#">Fog &amp; Bubble Machine</a></li>
+                            <li><a href="#">DJ Headphones</a></li>
+                            <li><a href="#">Karaoke</a></li>
+                            <li><a href="#">Mirror Light</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Used Gears</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Clearance!</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li class="lol"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+                </div>  
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <h2>Price:<span id="price"></span></h2>
+            <h3 style="float: left">In-Stock: <span id="instock"></span></h3>   
+
+            <div class="container-fluid guitar-image">
+                <img id="productImage" class="guitar-image"  alt="main image" style="object-fit: contain">
+            </div>
+            <div class="container-fluid ">
+                <button type="button" class="btn btn-primary" id="prev" >Prev</button>
+                <button type="button" class="btn btn-primary pull-right" id="next" >Next</button>
+            </div>
+         </div>
+        
+        <div class="container-fluid">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-defualt">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <button type="button" class="btn btn-link info" data-toggle="collapse" data-parent="#accordion" data-target="#collapse1">Product Information</button>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body" id="productInfo"></div>
+                    </div>
+                </div>
+                <div class="panel panel-defualt">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <button type="button" class="btn btn-link info" data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">Shipping Information</button>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                      <div class="panel-body" id="shippingInfo"></div>
+                    </div>
+                </div>
+                <div class="panel panel-defualt">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <button type="button" class="btn btn-link info" data-toggle="collapse" data-parent="#accordion" data-target="#collapse3" >Customer Reviews</button>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body" id="reviews">
+                            <span class="heading">User Rating</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <p>4.1 average based on 254 reviews.</p>
+                            <hr style="border:3px solid #f1f1f1">
+
+                            <div class="row">
+                              <div class="side">
+                                <div>5 star</div>
+                              </div>
+                              <div class="middle">
+                                <div class="bar-container">
+                                  <div class="bar-5"></div>
+                                </div>
+                              </div>
+                              <div class="side right">
+                                <div>150</div>
+                              </div>
+                              <div class="side">
+                                <div>4 star</div>
+                              </div>
+                              <div class="middle">
+                                <div class="bar-container">
+                                  <div class="bar-4"></div>
+                                </div>
+                              </div>
+                              <div class="side right">
+                                <div>63</div>
+                              </div>
+                              <div class="side">
+                                <div>3 star</div>
+                              </div>
+                              <div class="middle">
+                                <div class="bar-container">
+                                  <div class="bar-3"></div>
+                                </div>
+                              </div>
+                              <div class="side right">
+                                <div>15</div>
+                              </div>
+                              <div class="side">
+                                <div>2 star</div>
+                              </div>
+                              <div class="middle">
+                                <div class="bar-container">
+                                  <div class="bar-2"></div>
+                                </div>
+                              </div>
+                              <div class="side right">
+                                <div>6</div>
+                              </div>
+                              <div class="side">
+                                <div>1 star</div>
+                              </div>
+                              <div class="middle">
+                                <div class="bar-container">
+                                  <div class="bar-1"></div>
+                                </div>
+                              </div>
+                              <div class="side right">
+                                <div>20</div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary pull-right" id="buy" onclick="location.href='secondpage.html'">Buy</button>
+        </div>
+        <div id="pricy"></div>
+        <div id="charger"></div>
+       <script src="homepage.js"></script>
+    </body>
+    
+</html>

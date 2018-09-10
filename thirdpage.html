@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Guitar Center</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="secondpage.css">
+        <link rel="stylesheet" type="text/css" href="thirdpage.css">   
+    </head>
+    <body onload="randomNum()">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fliud">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="homepage.html"><img src="creative.jpg" height="30px" width="60px"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Guitar</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">View All Guitars</a></li>
+                            <li><a href="#">Electric Guitar</a></li>
+                            <li><a href="#">Acoustic Guitar</a></li>
+                            <li><a href="#">Acoustic-Electric Guitar</a></li>
+                            <li><a href="#">Vintage Guitar</a></li>
+                            <li><a href="#">Classic &amp; Nylon</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Bass</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">View All Bass</a></li>
+                            <li><a href="#">Electric Bass</a></li>
+                            <li><a href="#">Electric Upright Bass</a></li>
+                            <li><a href="#">Left Handed Bass</a></li>
+                        </ul>   
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Drums</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">View All Drums</a></li>
+                            <li><a href="#">Electric Drums &amp; Set</a></li>
+                            <li><a href="#">Acoustic Drums &amp; set</a></li>
+                            <li><a href="#">Snare Drums</a></li>
+                            <li><a href="#">Cymbals</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Keyboards</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">View All Keyboards</a></li>
+                            <li><a href="#">Digital Pianos</a></li>
+                            <li><a href="#">MIDI Controls &amp; Interfaces</a></li>
+                            <li><a href="#">Portable &amp; Arranger</a></li>
+                            <li><a href="#">Keyboard WorkStation</a></li>
+                            <li><a href="#">Keyboard &amp; MIDI Package</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">DJ &amp; Lightning</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">View All DJ &amp; Lightning</a></li>
+                            <li><a href="#">Dj Mixers</a></li>
+                            <li><a href="#">Controller &amp; Interface</a></li>
+                            <li><a href="#">DJ Software</a></li>
+                            <li><a href="#">Intelligent Lightning</a></li>
+                            <li><a href="#">Color Changer &amp; Wash Light</a></li>
+                            <li><a href="#">Lasers &amp; Strobes</a></li>
+                            <li><a href="#">Fog &amp; Bubble Machine</a></li>
+                            <li><a href="#">DJ Headphones</a></li>
+                            <li><a href="#">Karaoke</a></li>
+                            <li><a href="#">Mirror Light</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Used Gears</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Clearance!</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li class="lol"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+                </div>  
+            </div>
+        </nav>
+            <div class="container-fluid guitar-image">
+                <img id="finalImage" class="guitar-image"  alt="main image" style="object-fit: contain">
+            </div>
+             <div class="row">
+            <div class="col-75">
+               <div class="container">
+                   <h3>Your has been placed Successfully</h3>
+                   <h3>Something good is coming to you.</h3>
+                   <h3>Confirmation Number is: <span id="random"></span></h3>
+                   <div id="name"><strong>NAME: </strong><span id="fn"></span></div>
+                   <div id="mailing"><strong>EMAIL: </strong><span id="mail"></span></div>
+                   <div><strong>ADDRESS: </strong><span id="addr"></span></div>
+                   <div><strong>CITY: </strong><span id="saher"></span></div>
+                   <div><strong>STATE: </strong><span id="rajay"></span></div>
+                   <div><strong>Price: </strong><span id="price"></span></div>
+                   <div><strong>Shipping Charge: </strong><span id="ch"></span></div>
+                   <div><strong>Total: $</strong><span id="total"></span></div>
+               </div>
+            </div>    
+        </div>
+        <script src="thirdpage.js"></script>
+    </body>
+</html>
